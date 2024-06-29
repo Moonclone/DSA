@@ -12,7 +12,7 @@ public class IntersectionofTwoArrays {
 
         int intersection[] = interofTwoArrays(arr1,arr2);
 
-        System.out.print("The result is: ");
+        System.out.print("The result is:  ");
 
         for(int num: intersection){
             System.out.print(num + " ");
