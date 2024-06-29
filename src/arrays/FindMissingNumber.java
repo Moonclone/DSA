@@ -4,16 +4,24 @@ public class FindMissingNumber {
 
     public static void main(String[] args) {
 
-        int arr[] = {1,2,4,5};
-        int N = 5;
-        int x = findMissingNumber(arr);
+        int arr[] = {1,2,3,4,5,7};
+        int N = 7;
+        int x = findMissingNumberOptimal(arr, N);
         System.out.println(x);
     }
 
-    /*private static int findMissingNumberOptimal(int[] arr, int n) {
+    private static int findMissingNumberOptimal(int[] arr, int N) {
 
-        int sum = (N * (N=1))
-    }*/
+        int sum = (N * (N+1))/2;
+        int s2 = 0;
+
+        for(int i=0;i<arr.length;i++){
+            s2+=arr[i];
+        }
+
+        int missingNum = sum-s2;
+        return missingNum;
+    }
 
     private static int findMissingNumber(int[] arr) {
 
